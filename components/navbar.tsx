@@ -6,13 +6,13 @@ import {GrMenu} from 'react-icons/gr';
 
 import {
     Sheet,
-    SheetClose,
+    
     SheetContent,
     SheetDescription,
-    SheetTitle,
+    
     SheetHeader,
     SheetTrigger,
-    SheetFooter
+    
 } from "../components/ui/sheet"
 //import { ModeToggle } from "@/components/mode-toggle";
 

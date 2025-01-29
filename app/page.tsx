@@ -1,7 +1,7 @@
 // import DropZone from "@/components/dropzone"
 
 // import Code from "@/components/code";
-import DropZone from "@/components/dropzone";
+import DropZone from "../components/dropzone";
 import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
 import Link from "next/link";

@@ -9,15 +9,15 @@ import bytesToSize from '../util/bytes-to-size';
 import fileToIcon from '../util/file-to-icon';
 import { useState, useEffect, useRef } from 'react';
 import { useToast } from '../components/ui/use-toast';
-import compressFileName from '@/util/compress-file-name';
-import { Skeleton } from '@/components/ui/skeleton';
-import convertFile from '@/util/convert';
+import compressFileName from '../util/compress-file-name';
+import { Skeleton } from '../components/ui/skeleton';
+import convertFile from '../util/convert';
 import { ImSpinner3 } from 'react-icons/im';
 import { MdDone } from 'react-icons/md';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '../components/ui/badge';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { BiError } from 'react-icons/bi';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import {
 Select,
 SelectContent,
@@ -26,8 +26,8 @@ SelectTrigger,
 SelectValue,
 } from './ui/select';
 import { Button } from './ui/button';
-import loadFfmpeg from '@/util/load-ffmpeg';
-import type { Actions } from '@/types';
+import loadFfmpeg from '../util/load-ffmpeg';
+import type { Actions } from '../types';
 import { FFmpeg } from '@ffmpeg/ffmpeg';
 
 const extensions = {
