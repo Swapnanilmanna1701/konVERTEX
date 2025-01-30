@@ -3,6 +3,9 @@
 // imports
 import { FiUploadCloud } from 'react-icons/fi';
 //import { NeonGradientCard } from "./neoncard";
+//import VariableProximity from './text';
+
+//import { useRef } from 'react';
 
 import { LuFileSymlink } from 'react-icons/lu';
 import { MdClose } from 'react-icons/md';
@@ -31,6 +34,7 @@ import { Button } from './ui/button';
 import loadFfmpeg from '../util/load-ffmpeg';
 import type { Actions } from '../types';
 import { FFmpeg } from '@ffmpeg/ffmpeg';
+//const containerRef = useRef(null);
 
 const extensions = {
   image: [
@@ -427,7 +431,7 @@ const convert = async (): Promise<any> => {
       {({ getRootProps, getInputProps }) => (
         <div
           {...getRootProps()}
-          className=" bg-gradient-to-br from-[#ff15bf] from-35% to-[#00FFF1] h-72 lg:h-80 xl:h-96 relative -inset-x-32 rounded-3xl shadow-sm border-2  cursor-pointer flex items-center justify-center"
+          className=" bg-gradient-to-br from-[#ff15bf] from-25% via-violet-500 to-[#00FFF1] h-72 lg:h-80 xl:h-96 relative -inset-x-32 rounded-3xl shadow-sm border-2  cursor-pointer flex items-center justify-center"
         >
           <input {...getInputProps()} />
           <div className="space-y-4 text-gray-500">

@@ -5,11 +5,15 @@ import DropZone from "../components/dropzone";
 //import { ModeToggle } from "@/components/mode-toggle";
 //import Image from "next/image";
 //import Link from "next/link";
+import { useRef } from 'react';
+
 // import Image from "next/image";
 import GradientText from '../components/gradienttext'
+import VariableProximity from '../components/text';
 
 
 const Home = () => {
+    
     return ( 
         <div className="space-y-12 pb-8 space-x-72 ">
         <div className="space-y-6">
