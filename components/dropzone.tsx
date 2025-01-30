@@ -2,6 +2,8 @@
 
 // imports
 import { FiUploadCloud } from 'react-icons/fi';
+//import { NeonGradientCard } from "./neoncard";
+
 import { LuFileSymlink } from 'react-icons/lu';
 import { MdClose } from 'react-icons/md';
 import ReactDropzone from 'react-dropzone';
@@ -270,14 +272,14 @@ const convert = async (): Promise<any> => {
                 </span>
               </Badge>
             ) : (
-              <div className="text-gray-400 text-md flex items-center gap-4">
+              <div className="bg-clip-text text-transparent bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-300 text-lg text-bold flex items-center gap-4">
                 <span>Convert to</span>
                 <Select
                   onValueChange={(value) =>
                     updateAction(action.file_name, value)
                   }
                 >
-                  <SelectTrigger className="w-32 outline-none focus:outline-none focus:ring-0 text-center text-gray-600 bg-gray-50 text-sm font-medium">
+                  <SelectTrigger className="w-32 outline-none focus:outline-none focus:ring-0 text-center text-white  bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-300 text-sm font-bold">
                     <SelectValue placeholder="Select Type" />
                   </SelectTrigger>
                   <SelectContent className="h-fit">
@@ -425,7 +427,7 @@ const convert = async (): Promise<any> => {
       {({ getRootProps, getInputProps }) => (
         <div
           {...getRootProps()}
-          className=" bg-gray-50 h-72 lg:h-80 xl:h-96 relative -inset-x-32 rounded-3xl shadow-sm border-2 border-dashed cursor-pointer flex items-center justify-center"
+          className=" bg-gradient-to-br from-[#ff15bf] from-35% to-[#00FFF1] h-72 lg:h-80 xl:h-96 relative -inset-x-32 rounded-3xl shadow-sm border-2  cursor-pointer flex items-center justify-center"
         >
           <input {...getInputProps()} />
           <div className="space-y-4 text-gray-500">
@@ -440,11 +442,11 @@ const convert = async (): Promise<any> => {
               </>
             ) : (
               <>
-                <div className="justify-center flex text-6xl">
+                <div className="justify-center flex text-6xl  text-white">
                   <FiUploadCloud />
                 </div>
-                <h3 className="text-center font-medium text-2xl">
-                  Click, or drop your files here
+                <h3 className="text-center font-medium text-4xl text-white">
+                  Browse Or Drop Your files Here
                 </h3>
               </>
             )}

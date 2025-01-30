@@ -62,6 +62,10 @@ module.exports = {
                     '50%': { backgroundPosition: '100% 50%' },
                     '100%': { backgroundPosition: '0% 50%' },
                    },
+                   "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -74,7 +78,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        gradient: 'gradient 8s linear infinite'
+        gradient: 'gradient 8s linear infinite',
+        "background-position-spin":
+        "background-position-spin 3000ms infinite alternate",
       },
     },
   },
