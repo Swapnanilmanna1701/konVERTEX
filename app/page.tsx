@@ -2,9 +2,9 @@
 
 // import Code from "@/components/code";
 import DropZone from "../components/dropzone";
-import { ModeToggle } from "@/components/mode-toggle";
-import Image from "next/image";
-import Link from "next/link";
+//import { ModeToggle } from "@/components/mode-toggle";
+//import Image from "next/image";
+//import Link from "next/link";
 // import Image from "next/image";
 
 const Home = () => {
@@ -17,13 +17,7 @@ const Home = () => {
         <div className="relative inset-y-4">
         {/* <ModeToggle/> */}
         <div className="items-center flex flex-col justify-center w-full">
-      <Link href="https://www.producthunt.com/posts/filemagnet?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-filemagnet" target="_blank">
-          <img 
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=433044&theme=light" 
-            alt="FileMagnet - FileMagnet is a free file converter, which is backendless 🎯 | Product Hunt" 
-            className="w-[250px] h-[64px] hover:transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"
-          />
-      </Link>
+      
     </div>
         </div>
         </h2>
